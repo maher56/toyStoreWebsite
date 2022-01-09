@@ -1,0 +1,27 @@
+body#contact{
+    section.info {
+        display: grid;
+        gap: 50px;
+        @include xl("min") {
+            grid-template-columns: 1fr 1fr;
+            > div:first-of-type{grid-column: 1 / 2;}
+            > div:last-of-type{grid-column: 2 / 3;}}
+        background-color: #fff;
+        margin-top: $main-padding;
+        margin-bottom: $main-padding;
+        padding: 40px 60px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 5px 0px #ccc;
+        @include md("max"){padding: 30px 40px;gap: 30px;}
+        @include sm("max"){padding: 20px 30px;gap: 20px;}
+        .social {
+            li {
+                &.twitter {background-color: $twitter-color;}
+                &.facebook {background-color: $facebook-color;}
+                &.instagram {background-color: $instagram-color;}
+                &.pinterest {background-color: $penterst-color;}
+                &.youtube {background-color: $youtube-color;}
+            }
+        }
+    }
+}

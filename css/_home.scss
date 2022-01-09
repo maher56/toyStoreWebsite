@@ -1,0 +1,23 @@
+body#home {
+    section.head {
+        background: url("../img/unsplash0.jpg") no-repeat;
+        background-size: cover;
+        background-position: 50% 94%;
+        height: 80vh;
+        display: flex;
+        align-items: center;
+        > div > div {
+            border-radius: 10px;
+            width: fit-content;
+            @include center();
+            padding: 50px 70px;
+            @include md("max"){padding: 30px 40px;}
+            @include sm("max"){padding: 10px 20px;}
+            background-color: #fff;
+            h1 {
+                width: 90%;
+                @include center();
+            }
+        }
+    }
+}

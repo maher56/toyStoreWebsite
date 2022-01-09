@@ -1,0 +1,21 @@
+body#delivery{
+    section.info {
+        background-color: #fff;
+        margin-top: $main-padding;
+        margin-bottom: $main-padding;
+        padding: 40px 60px;
+        border-radius: 20px;
+        box-shadow: 0px 0px 5px 0px #ccc;
+        @include md("max"){padding: 30px 40px;}
+        @include sm("max"){padding: 20px 30px;}
+        .contact {
+            margin-top: 50px;
+            text-align: center;
+            @include center();
+            width: 50%;
+            border: 1px solid #ccc;
+            padding: 20px 40px;
+            border-radius: 16px;
+        }
+    }
+}

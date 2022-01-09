@@ -1,0 +1,17 @@
+body#catalog {
+    section.toys {
+        .header {
+            > div:first-of-type{display: none;}
+            justify-content: center !important;
+            .buttons {
+                @include sm("max") {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: space-between;
+                    height: 125px;
+                }
+            }
+        }
+    }
+}
